@@ -6,7 +6,11 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import '@fortawesome/fontawesome-free/js/all.min';
 
 $(document) .ready(function(){
-    $('[data-toggle="tooltip"]').tooltip()
+    $('[data-toggle="tooltip"]').tooltip();
+
+    $('.add-to-cart-btn').click(function(){
+        alert('اضيف المنتج لعربة الشراء..');
+    });
 });
 
 
