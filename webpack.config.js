@@ -32,9 +32,6 @@ module.exports = {
         use: [
           {
             loader: "html-loader",
-            options: {
-              minimize: true,
-            }
           }
         ]
       },
@@ -101,6 +98,17 @@ module.exports = {
       filename: "index.html",
       template: "./src/index.html",
     }),
+
+    new HtmlWebpackPlugin({
+      filename: "product.html",
+      template: "./src/product.html",
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: "checkout.html",
+      template: "./src/checkout.html",
+    }),
+
 
     new MiniCssExtractPlugin({filename:"CSS/style.css" }),
     new OptimizeCssAssetsPlugin({}),
