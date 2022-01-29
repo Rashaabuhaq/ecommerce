@@ -409,7 +409,7 @@ h3.custom-heading {
     max-width: 260px;
     margin: auto;
 }
-#newsletter input[type=email] {
+#newsletter input[type=email] , input[type="number"] {
     direction: rtl;
     text-align: right;
 
@@ -666,6 +666,30 @@ h1.custom-heading {
 }
 
 
+/***********************************************************************************
+***********************************************************************************
+************************************
+payment page***********************************************************/
+.custom-input-details {
+    border-width: 2px;
+    border-radius: 3px;
+    height: 46px !important;
+    padding: 0 16px;
+    font-size: 18px; 
+    width: 96%;
+}
+.custom-form-control:focus {
+    border-color: #b86d07;
+    box-shadow:0 0 2px #b86d07;
+}
+.form-group input::placeholder {
+    text-align: right;
+}
+#credit-card-info {
+    margin-right: 3%;
+}
+
+
 
 
 
@@ -781,6 +805,7 @@ h1.custom-heading {
         max-width: 95%;
         width: 100%;
     }
+
     /*product page*/ 
     .product-option {
         width: 40px;

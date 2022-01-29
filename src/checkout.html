@@ -24,7 +24,7 @@
                          <img src="./images/logo.png" alt="متجر عربي ">
                         </a>
                     </div>
-                    <form class="form-inline">
+                    <form class="form-inline ">
                         <input type="search" class="form-control custom-form-control" placeholder="ابحث ...">
                         <div class="dropdown categories">
                             <a href="#" class="nav-link dropdown-toggle custom-btn" id="navbarDropdown" role="button" data-toggle="dropdown"  aria-expanded="false">
@@ -116,7 +116,7 @@
                     <h1 class="custom-heading ">عربة الشراء</h1>
                 </div>
                 <div class="col-12">
-                    <form id="form-checkout" >
+                    <form id="form-checkout" action="payment.html" method="get">
                         <table class="custom-table ">
                             <thead>
                                 <tr>
@@ -145,6 +145,7 @@
                                         400$
                                     </td>
                                     <td>
+                                        <input name="product1" type="hidden" value="تي شيرت رجالي من لاكوست">
                                         <select  name="quantity1" class="form-control custom-form-control quantity" data-product-quantity>
                                             <option value="1" selected>1</option>
                                             <option value="2">2</option>
@@ -177,6 +178,7 @@
                                         300$
                                     </td>
                                     <td>
+                                        <input name="product2" type="hidden" value="تي شيرت اديداس">
                                         <select name="quantity2" class="form-control custom-form-control quantity" data-product-quantity>
                                             <option value="1">1</option>
                                             <option value="2">2</option>
@@ -212,7 +214,7 @@
                             </tfoot>
                         </table>
                         <button type="submit" class="btn custom-btn-primary2 custom-btn-with-icon">
-                            <span>
+                            <span >
                                 اكمال عملية الشراء
                                 <i class="fas fa-dollar-sign"></i>
                             </span>
